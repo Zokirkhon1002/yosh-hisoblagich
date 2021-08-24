@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Yosh-hisoblagich</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inputs-muqova">
+            <input type="text" name="name" class="js" id="name-input" placeholder="Ismingizni kiriting..."/> <br>
+            <input type="date" name="date" id="date-input" />
+            <button onclick="yoshHisoblagich()">Hisoblash</button>
+        </div>
+        <div class="forName">
+            <div>
+                <span id="nameOutput" title="sizning ismingiz:)"></span>
+            </div>
+        </div>
+        <div class="outputs-muqova">
+            <div>
+                <span id="yil"> - </span>
+                <p> Yil </p>
+            </div>
+            <div>
+                <span id="oy"> - </span>
+                <p> Oy </p>
+            </div>
+            <div>
+                <span id="kun"> - </span>
+                <p> Kun </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

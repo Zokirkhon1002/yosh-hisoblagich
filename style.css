@@ -1,0 +1,123 @@
+*,*:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --kok: #53daff;
+    --siniy: #0c7e9e;
+    --qora: #000000;
+    --gray: #909090;
+    --oq: #ffffff;
+    --shadow: 0 15px 20px rgba(0 0 0 / 30%);
+}
+
+body {
+    background-color: var(--kok);
+    font-family: "Poppins",sans-serif;
+}
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 40px;
+}
+.container *{
+    border: none;
+    outline: none;
+    font-family: "Poppins",sans-serif;
+}
+
+.inputs-muqova {
+    background-color: var(--qora);
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 50px;
+}
+
+input {
+    width: 60%;
+    padding: 10px 20px;
+    margin: 5px;
+}
+#name-input{
+    width: 98%;
+    font-size: 18px;
+}
+input, button {
+    height: 50px;
+    background-color: var(--oq);
+    color: var(--qora);
+    font-weight: 500;
+    border-radius: 5px;
+}
+button {
+    width: 35%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    transform: scale(0.95);
+    font-size: 16px;
+}
+button:hover {
+    background-color: var(--siniy);
+    color: var(--oq);
+    transform: scale(1.05);
+}
+.outputs-muqova {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.outputs-muqova div {
+    height: 100px;
+    width: 100px;
+    background-color: var(--qora);
+    color: var(--oq);
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+span {
+    font-size: 30px;
+    font-weight: 500;
+}
+p {
+    font-size: 14px;
+    color: var(--gray);
+}
+.forName {
+    display: flex;
+    margin: 40px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+#nameOutput{
+    opacity: 0;
+    display: flex;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: var(--qora);
+    color: var(--oq);
+    font-weight: bold;
+    padding: 20px 60px;
+    border-radius: 5px;
+    text-shadow: 0.1px 0.1px 5px var(--kok),  0.1px 0.1px 5px var(--kok), -0.1px -0.1px 5px var(--kok), -0.1px -0.1px 5px var(--kok);
+    box-shadow: var(--shadow);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+#date-input {
+    font-size: 14px;
+}
