@@ -19,11 +19,7 @@ function yoshHisoblagich() {
         kabisaYil(hozirgiYil);
 
         const { date, month, year } = birthDetails; // destructing qilib oldik, (birthDetails) so'zni takrorlamaslik uchun
-        if(
-            year > hozirgiYil ||
-            (month > hozirgiOy && year == hozirgiYil) ||
-            (date > hozirgiSana && month == hozirgiOy && year == hozirgiYil)
-            ) {
+        if(year > hozirgiYil || (month > hozirgiOy && year == hozirgiYil) || (date > hozirgiSana && month == hozirgiOy && year == hozirgiYil)) {
                 alert(`Siz hali tug'ilmagansiz`);
                 displayResult("-","-","-"); // natijani shu funksiya orqali chiqaramiz
                 return
