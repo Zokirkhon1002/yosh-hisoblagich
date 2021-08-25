@@ -1,5 +1,18 @@
 const oylar = [31,28,31,30,31,30,31,31,30,31,30,31];
 
+
+function nameSpeaker() {
+      let inputName = document.querySelector(".js");
+        const firstName = inputName.value;
+        const Speech = new SpeechSynthesisUtterance(firstName);
+        Speech.volume = 2;
+        Speech.rate = 1;
+        Speech.pitch = 2;
+
+        window.speechSynthesis.speak(Speech);
+        event.preventDefault();
+      }
+
 function yoshHisoblagich() {
     let bugun = new Date(),
         inputDate = new Date(document.getElementById("date-input").value),
@@ -77,6 +90,7 @@ function displayResult(bDate, bMonth, bYear){
     document.getElementById("nameOutput").style.opacity = '1';
     document.getElementById("nameOutput").textContent = inputName;
 }
+
 
 // 4-yilda fevral 29 bo'ladi, shuni to'g'irlab oldik.
 function kabisaYil(yil){
