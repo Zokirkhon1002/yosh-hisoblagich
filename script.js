@@ -83,9 +83,7 @@ function displayResult(bDate, bMonth, bYear){
         return;
     }
       
-      
-      nameSpeaker();
-    
+
       
     document.getElementById("yil").textContent = bYear;
     document.getElementById("oy").textContent = bMonth;
