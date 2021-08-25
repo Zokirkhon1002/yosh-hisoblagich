@@ -12,6 +12,16 @@ function nameSpeaker() {
         window.speechSynthesis.speak(Speech);
         event.preventDefault();
       }
+function dateSpeaker() {
+      let inputDate = new Date(document.getElementById("date-input").value);
+        const Speech = new SpeechSynthesisUtterance(inputDate);
+        Speech.volume = 2;
+        Speech.rate = 1;
+        Speech.pitch = 2;
+
+        window.speechSynthesis.speak(Speech);
+        event.preventDefault();
+      }
 
 function yoshHisoblagich() {
     let bugun = new Date(),
