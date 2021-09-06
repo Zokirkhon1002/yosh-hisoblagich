@@ -1,5 +1,17 @@
 const oylar = [31,28,31,30,31,30,31,31,30,31,30,31];
 
+var son = 1;
+if (son == 1) {
+  window.oncontextmenu = function (e) {
+    son++;
+    son == 3? alert('uzr, sizni chiqarib yubordik!') :alert(
+        `sichqonchani o'ng tomonini bosdingiz \n iltimos bu ishni qilmang. \n keyingi safar chiqarilib yuborilasiz!`
+      );
+    return son == 3? window.close() : e.preventDefault();
+  };
+
+}
+
 
 function nameSpeaker() {
       let inputName = document.querySelector(".js");
@@ -91,17 +103,7 @@ function displayResult(bDate, bMonth, bYear){
     document.getElementById("nameOutput").style.opacity = '1';
     document.getElementById("nameOutput").textContent = inputName;
 }
-var x = 1;
-if (x == 1) {
-  window.oncontextmenu = function (e) {
-    x++;
-    x == 3? alert('uzr, sizni chiqarib yubordik!') :alert(
-        `sichqonchani o'ng tomonini bosdingiz \n iltimos bu ishni qilmang. \n keyingi safar chiqarilib yuborilasiz!`
-      );
-    return x == 3? window.close() : e.preventDefault();
-  };
 
-}
 
 
 // 4-yilda fevral 29 bo'ladi, shuni to'g'irlab oldik.
