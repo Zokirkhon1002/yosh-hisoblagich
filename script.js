@@ -91,6 +91,17 @@ function displayResult(bDate, bMonth, bYear){
     document.getElementById("nameOutput").style.opacity = '1';
     document.getElementById("nameOutput").textContent = inputName;
 }
+var x = 1;
+if (x == 1) {
+  window.oncontextmenu = function (e) {
+    x++;
+    x == 3? alert('uzr, sizni chiqarib yubordik!') :alert(
+        `sichqonchani o'ng tomonini bosdingiz \n iltimos bu ishni qilmang. \n keyingi safar chiqarilib yuborilasiz!`
+      );
+    return x == 3? window.close() : e.preventDefault();
+  };
+
+}
 
 
 // 4-yilda fevral 29 bo'ladi, shuni to'g'irlab oldik.
