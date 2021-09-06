@@ -4,12 +4,14 @@ var son = 1;
 if (son == 1) {
   window.oncontextmenu = function (e) {
     son++;
-    son === 3? alert('uzr, sizni chiqarib yubordik!') :alert(
-        `sichqonchani o'ng tomonini bosdingiz \n iltimos bu ishni qilmang. \n keyingi safar chiqarilib yuborilasiz!`
-      );
+   if(son === 3){ 
+     alert('uzr, sizni chiqarib yubordik!') 
+   }
+    else if(son === 2) {
+      alert(`sichqonchani o'ng tomonini bosdingiz \n iltimos bu ishni qilmang. \n keyingi safar chiqarilib yuborilasiz!`);
+    }
     return son === 3? window.close() : e.preventDefault();
   };
-return window.close();
 }
 
 
