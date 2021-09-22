@@ -9,7 +9,6 @@ if (son == 1) {
       e.preventDefault();
     }
     else if(son === 3){ 
-     alert('uzr, sizni chiqarib yubordik!') ;
      window.close();
    }
     return window.close();
