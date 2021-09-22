@@ -9,8 +9,8 @@ if (son == 1) {
       e.preventDefault();
     }
     else if(son === 3){
-     alert('uzr, sizni chiqarib yubordik!') ;
-     chiqish();
+      chiqish();
+     alert('uzr, sizni chiqarib yubordik!');
    }
     return window.close();
   };
