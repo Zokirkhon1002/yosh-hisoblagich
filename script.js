@@ -8,8 +8,9 @@ if (son == 1) {
       alert(`sichqonchani o'ng tomonini bosdingiz \n iltimos bu ishni qilmang. \n keyingi safar chiqarilib yuborilasiz!`);
       e.preventDefault();
     }
-    else if(son === 3){ 
-     window.close();
+    else if(son === 3){
+     alert('uzr, sizni chiqarib yubordik!') ;
+     window.close(e);
    }
     return window.close();
   };
