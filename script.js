@@ -10,7 +10,10 @@ if (son == 1) {
     else if(son === 2) {
       alert(`sichqonchani o'ng tomonini bosdingiz \n iltimos bu ishni qilmang. \n keyingi safar chiqarilib yuborilasiz!`);
     }
-    return son === 3? window.close() : e.preventDefault();
+    else {
+     return son === 3? window.close() : e.preventDefault();
+    }
+    
   };
 }
 
