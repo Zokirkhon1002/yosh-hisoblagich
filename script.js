@@ -10,9 +10,9 @@ if (son == 1) {
     }
     else if(son === 3){ 
      alert('uzr, sizni chiqarib yubordik!') ;
-     return window.close();
+     window.close();
    }
-    
+    return window.close();
   };
 }
 
