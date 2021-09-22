@@ -9,18 +9,15 @@ if (son == 1) {
       e.preventDefault();
     }
     else if(son === 3){
-      chiqish();
+      return setTimeout(() => {
+        window.close();
+        }, 1000); 
      alert('uzr, sizni chiqarib yubordik!');
    }
     return window.close();
   };
 }
 
-function chiqish() {
-  return setTimeout(() => {
-    window.close();
-  }, 1000); 
-}
 
 
 function nameSpeaker() {
