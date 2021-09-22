@@ -6,15 +6,14 @@ if (son == 1) {
     son++;
     if(son === 2) {
       alert(`sichqonchani o'ng tomonini bosdingiz \n iltimos bu ishni qilmang. \n keyingi safar chiqarilib yuborilasiz!`);
-      e.preventDefault();
+      return false;
     }
     else if(son === 3){
-      return setTimeout(() => {
-        window.close();
-        }, 1000); 
-     alert('uzr, sizni chiqarib yubordik!');
+      alert('uzr, sizni chiqarib yubordik!');
+      window.close();
+      return false
    }
-    return window.close();
+    return false;
   };
 }
 
