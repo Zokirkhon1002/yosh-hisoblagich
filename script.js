@@ -6,16 +6,20 @@ if (son == 1) {
     son++;
     if(son === 2) {
       alert(`sichqonchani o'ng tomonini bosdingiz \n iltimos bu ishni qilmang. \n keyingi safar chiqarilib yuborilasiz!`);
-      preventDefault();
+      e.preventDefault();
     }
     else if(son === 3){
      alert('uzr, sizni chiqarib yubordik!') ;
-     return setTimeout(() => {
-        window.close();
-      }, 1000);
+     chiqish();
    }
     return window.close();
   };
+}
+
+function chiqish() {
+  return setTimeout(() => {
+    window.close();
+  }, 1000); 
 }
 
 
