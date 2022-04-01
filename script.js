@@ -10,7 +10,7 @@ if (son == 1) {
     }
     else if(son === 3){
       alert('uzr, sizni chiqarib yubordik!');
-      window.close();
+      window.close(e);
       return false
    }
     return false;
